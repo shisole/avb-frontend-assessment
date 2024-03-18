@@ -2,6 +2,10 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
+import Slide from "@material-ui/core/Slide";
+import Paper from "@material-ui/core/Paper";
+
+import CommentForm from "./CommentForm";
 
 import {
   closeCommentsModal,
@@ -13,6 +17,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+  },
+  formDialog: {
+    display: "flex",
+    minHeight: "350px",
+    minWidth: "350px",
+    zIndex: 1,
   },
 }));
 
@@ -32,7 +42,11 @@ const CommentModal = () => {
       aria-labelledby="simple-modal-title"
       aria-describedby="simple-modal-description"
     >
-      <p>Add Comments</p>
+      <Slide direction="up" in={isOpen} mountOnEnter unmountOnExit>
+        <Paper elevation={4} className={classes.formDialog}>
+          <CommentForm />
+        </Paper>
+      </Slide>
     </Modal>
   );
 };

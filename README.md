@@ -1,5 +1,30 @@
-
 # AVB Frontend Assesment
+
+## Quick walkthrough on the app
+
+
+1. Initial Setup
+ - The project is bootstrapped with Create React App.
+ - Material-UI is utilized for styling
+
+2. Displaying Comments:
+ - Initially, the app loads a list of comments, The first couple of comments are from the local API provided, the following comments are from the API provided (with a little tweaking to only pass 10 comments from the API endpoint -- Unlimited scrolling shouldve been an implemented but decided not to at the moment).
+ - Each comment is displayed with the commenter's avatar (potentially showing the first initial or first and last initial), name, and the comment itself.
+
+3. Adding Comments:
+ - Users can add comments via a modal. The Call To Action (CTA) buttons are located at the bottom left and a Floating Action Button (FAB) at the middle.
+ - The modal contains input fields for the commenter's name and their comment.
+ - Upon submission, the new comment is added to the list of comments displayed on the main page.
+
+
+
+
+
+
+
+
+
+
 
 ## User Story
 
