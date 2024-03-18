@@ -16,7 +16,8 @@
  - The modal contains input fields for the commenter's name and their comment.
  - Upon submission, the new comment is added to the list of comments displayed on the main page.
 
-
+4. Live Preview:
+ - The app is hosted at Netlify -- https://shisole-mini-comment-section.netlify.app
 
 
 
