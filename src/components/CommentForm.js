@@ -44,7 +44,7 @@ const CommentFormFields = {
 };
 
 const CommentForm = () => {
-  const [userComment, setUserComment] = useState({ name: "", comment: "" });
+  const [userComment] = useState({ name: "", comment: "" });
   const classes = useStyles();
   const dispatch = useDispatch();
   const handleCloseModal = () => dispatch(closeCommentsModal());

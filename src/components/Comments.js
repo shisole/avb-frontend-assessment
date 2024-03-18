@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   getCommentsFromAPI,
   addCommentsFromLocal,
-  getLeaderboard,
   getComments,
 } from "store/slices/comment";
 import CommentSkeleton from "components/CommentSkeleton";
@@ -20,7 +19,6 @@ const Comments = () => {
   }, [dispatch]);
 
   const { comments, isLoading } = useSelector(getComments);
-  const leaderboard = useSelector(getLeaderboard);
   return (
     <>
       {comments.map((commentDetails) => (

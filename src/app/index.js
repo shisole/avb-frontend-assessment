@@ -1,7 +1,6 @@
 import React from "react";
 
 import "app/App.css";
-import logo from "app/logo.svg";
 import Header from "components/Header";
 import CommentModal from "components/CommentModal";
 import Comments from "components/Comments";
