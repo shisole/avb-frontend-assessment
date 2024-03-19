@@ -12,7 +12,7 @@
  - Each comment is displayed with the commenter's avatar (potentially showing the first initial or first and last initial), name, and the comment itself.
 
 3. Adding Comments:
- - Users can add comments via a modal. The Call To Action (CTA) buttons are located at the bottom left and a Floating Action Button (FAB) at the middle.
+ - Users can add comments via a modal. The Call To Action (CTA) buttons are located at the bottom right and a Floating Action Button (FAB) at the middle.
  - The modal contains input fields for the commenter's name and their comment.
  - Upon submission, the new comment is added to the list of comments displayed on the main page.
 
